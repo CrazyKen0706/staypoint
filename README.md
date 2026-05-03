@@ -47,7 +47,7 @@ Multiple stay CSVs can be combined into one map with date checkboxes:
 python scripts/visualize_stay_points.py outputs\smoke_oimachi_20211101_533935.csv outputs\stay_points_oimachi_20211102_20211107_mesh533935.csv --output-html outputs\stay_points_oimachi_20211101_20211107_mesh533935.html --output-geojson outputs\stay_points_oimachi_20211101_20211107_mesh533935.geojson
 ```
 
-Post-aggregate existing staypoints with the same per-user spatial and temporal logic:
+Post-aggregate existing staypoints with time-aware DBSCAN. The script first splits each `userid + date` sequence into time windows, then runs DBSCAN inside each window only. The default `--time-window-sec 1800` prevents morning and evening visits to the same place from being merged into one stay event.
 
 ```powershell
 python scripts/aggregate_stay_points.py outputs\smoke_oimachi_20211101_533935_timefix.csv outputs\stay_points_oimachi_20211102_20211107_mesh533935.csv --output-prefix outputs\aggregated_stay_points_oimachi_20211101_20211107_mesh533935

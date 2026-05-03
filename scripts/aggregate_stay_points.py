@@ -7,17 +7,26 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-from stay_detection import _dbscan_labels, project_xy_m
+try:
+    from stay_detection import _dbscan_labels, project_xy_m
+except ModuleNotFoundError:  # pragma: no cover - used when imported as scripts.aggregate_stay_points.
+    from scripts.stay_detection import _dbscan_labels, project_xy_m
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Post-aggregate extracted stay points with paper-style DBSCAN.")
+    parser = argparse.ArgumentParser(description="Post-aggregate extracted stay points with time-aware DBSCAN.")
     parser.add_argument("stay_csv", nargs="+", help="One or more stay point CSV files.")
     parser.add_argument("--output-prefix", required=True, help="Output prefix, e.g. outputs/agg_oimachi_20211101_20211107.")
     parser.add_argument("--origin-lon", type=float, default=139.73494, help="Local projection origin longitude.")
     parser.add_argument("--origin-lat", type=float, default=35.60625, help="Local projection origin latitude.")
     parser.add_argument("--eps-m", type=float, default=150.0, help="DBSCAN Eps radius in meters.")
     parser.add_argument("--min-source-stays", type=int, default=2, help="DBSCAN MinPts for source staypoints.")
+    parser.add_argument(
+        "--time-window-sec",
+        type=int,
+        default=1800,
+        help="Maximum gap between source staypoints before starting a new time window.",
+    )
     return parser.parse_args()
 
 
@@ -74,6 +83,23 @@ def weighted_mean(rows: list[dict[str, Any]], key: str) -> float | None:
     return sum(float(value) * weight for value, weight in valid) / total_weight
 
 
+def split_by_time_window(stays: list[dict[str, Any]], time_window_sec: int) -> list[list[dict[str, Any]]]:
+    if not stays:
+        return []
+    sorted_stays = sorted(stays, key=lambda row: (row["_start_dt"], row["_end_dt"]))
+    windows: list[list[dict[str, Any]]] = []
+    current = [sorted_stays[0]]
+    for stay in sorted_stays[1:]:
+        gap = (stay["_start_dt"] - current[-1]["_end_dt"]).total_seconds()
+        if gap <= time_window_sec:
+            current.append(stay)
+        else:
+            windows.append(current)
+            current = [stay]
+    windows.append(current)
+    return windows
+
+
 def emit_group(
     rows: list[dict[str, Any]],
     agg_id: str,
@@ -106,6 +132,8 @@ def emit_group(
         "source_stay_ids": "|".join(source_ids),
         "aggregation_action": action,
         "dbscan_label": dbscan_label,
+        "time_window_start": start_time.isoformat(sep=" "),
+        "time_window_end": end_time.isoformat(sep=" "),
     }
 
 
@@ -115,6 +143,7 @@ def aggregate_stays(
     origin_lat: float,
     eps_m: float,
     min_source_stays: int,
+    time_window_sec: int,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     by_user_date: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
     for stay in stays:
@@ -132,23 +161,31 @@ def aggregate_stays(
             next_id += 1
             continue
 
-        xy = [project_xy_m(row["lon"], row["lat"], origin_lon, origin_lat) for row in group_rows]
-        labels = _dbscan_labels(xy, eps_m, min_source_stays)
-        handled = set()
-        for cluster_id in sorted({label for label in labels if label >= 0}):
-            spatial_cluster = [row for row, label in zip(group_rows, labels) if label == cluster_id]
-            merged_row = emit_group(spatial_cluster, f"agg_{next_id:08d}", min_source_stays, cluster_id)
-            output_rows.append(merged_row)
-            decision_rows.append(merged_row.copy())
-            next_id += 1
-            handled.update(id(item) for item in spatial_cluster)
-
-        for row_item, label in zip(group_rows, labels):
-            if label == -1 or id(row_item) not in handled:
-                row = emit_group([row_item], f"agg_{next_id:08d}", min_source_stays, -1)
+        for time_window in split_by_time_window(group_rows, time_window_sec):
+            if len(time_window) == 1:
+                row = emit_group(time_window, f"agg_{next_id:08d}", min_source_stays, -1)
                 output_rows.append(row)
                 decision_rows.append(row.copy())
                 next_id += 1
+                continue
+
+            xy = [project_xy_m(row["lon"], row["lat"], origin_lon, origin_lat) for row in time_window]
+            labels = _dbscan_labels(xy, eps_m, min_source_stays)
+            handled = set()
+            for cluster_id in sorted({label for label in labels if label >= 0}):
+                spatial_cluster = [row for row, label in zip(time_window, labels) if label == cluster_id]
+                merged_row = emit_group(spatial_cluster, f"agg_{next_id:08d}", min_source_stays, cluster_id)
+                output_rows.append(merged_row)
+                decision_rows.append(merged_row.copy())
+                next_id += 1
+                handled.update(id(item) for item in spatial_cluster)
+
+            for row_item, label in zip(time_window, labels):
+                if label == -1 or id(row_item) not in handled:
+                    row = emit_group([row_item], f"agg_{next_id:08d}", min_source_stays, -1)
+                    output_rows.append(row)
+                    decision_rows.append(row.copy())
+                    next_id += 1
 
     return output_rows, decision_rows
 
@@ -172,6 +209,7 @@ def main() -> int:
         origin_lat=args.origin_lat,
         eps_m=args.eps_m,
         min_source_stays=args.min_source_stays,
+        time_window_sec=args.time_window_sec,
     )
 
     fields = [
@@ -191,6 +229,8 @@ def main() -> int:
         "source_stay_ids",
         "aggregation_action",
         "dbscan_label",
+        "time_window_start",
+        "time_window_end",
     ]
     combined_csv = output_prefix.with_suffix(".csv")
     decisions_csv = output_prefix.with_name(output_prefix.name + "_aggregation_decisions").with_suffix(".csv")
