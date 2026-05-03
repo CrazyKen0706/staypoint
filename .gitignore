@@ -1,0 +1,45 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local tooling
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Generated outputs
+outputs/
+*.parquet
+
+# Raw or large local data files
+data/
+data_geo/
+*.csv.gz
+*.zip
+*.7z
+*.rar
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/

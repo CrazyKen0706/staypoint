@@ -1,0 +1,39 @@
+{
+  "site": {
+    "name": "oimachi",
+    "station_name": "Oimachi Station",
+    "center_lon": 139.73494,
+    "center_lat": 35.60625,
+    "radius_m": 800
+  },
+  "date_range": {
+    "start": "20211101",
+    "end": "20211107"
+  },
+  "paths": {
+    "geo_root": "D:\\修论\\data_geo",
+    "living_area": "D:\\修论\\data_living area\\dt=20211101 living area\\dt=20211101\\living-area-20211101.csv.gz",
+    "survey": "D:\\修论\\survey-20211201.csv\\survey-20211201.csv",
+    "output_dir": "outputs"
+  },
+  "columns": {
+    "user_id": "userid",
+    "timestamp": "recordedat",
+    "lon": "lon",
+    "lat": "lat",
+    "accuracy": "accuracy",
+    "anonymous": "isanonymous"
+  },
+  "parameters": {
+    "anonymous_policy": "exclude",
+    "csv_chunksize": 200000,
+    "visitor_file_glob": "geolocation-{date}-533935.csv.gz",
+    "trajectory_file_glob": "geolocation-{date}-*.csv.gz",
+    "sequence_max_gap_sec": 120,
+    "stay_eps_m": 50,
+    "stay_min_points": 3,
+    "max_duration_sec_per_point": 120,
+    "merge_overlap_gap_sec": 0,
+    "output_stays_within_radius_only": true
+  }
+}
