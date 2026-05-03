@@ -66,6 +66,42 @@ def split_temporally_continuous(
     return sequences
 
 
+def _build_stay_from_points(
+    user_id: str,
+    cluster_points: Sequence[TrackPoint],
+    stay_min_points: int,
+    max_duration_sec_per_point: int,
+) -> StayPoint | None:
+    point_count = len(cluster_points)
+    if point_count < stay_min_points:
+        return None
+
+    sorted_points = sorted(cluster_points, key=lambda p: p.timestamp)
+    start_time = sorted_points[0].timestamp
+    end_time = sorted_points[-1].timestamp
+    duration_sec = (end_time - start_time).total_seconds()
+    if duration_sec > point_count * max_duration_sec_per_point:
+        return None
+
+    mean_lon = sum(point.lon for point in sorted_points) / point_count
+    mean_lat = sum(point.lat for point in sorted_points) / point_count
+    accuracies = [point.accuracy for point in sorted_points if point.accuracy is not None]
+    mean_accuracy = sum(accuracies) / len(accuracies) if accuracies else None
+    source_days = ",".join(sorted({point.source_date or start_time.strftime("%Y%m%d") for point in sorted_points}))
+
+    return StayPoint(
+        user_id=user_id,
+        start_time=start_time,
+        end_time=end_time,
+        lon=mean_lon,
+        lat=mean_lat,
+        duration_sec=duration_sec,
+        point_count=point_count,
+        mean_accuracy=mean_accuracy,
+        source_days=source_days,
+    )
+
+
 def _dbscan_labels(points_xy: Sequence[tuple[float, float]], eps_m: float, min_points: int) -> list[int]:
     labels = [-99] * len(points_xy)
     cluster_id = 0
@@ -137,36 +173,16 @@ def detect_stays_for_user_day(
 
         for cluster_id in cluster_ids:
             cluster_points = [point for point, label in zip(sequence, labels) if label == cluster_id]
-            cluster_points.sort(key=lambda p: p.timestamp)
-            point_count = len(cluster_points)
-            if point_count < stay_min_points:
-                continue
-
-            start_time = cluster_points[0].timestamp
-            end_time = cluster_points[-1].timestamp
-            duration_sec = (end_time - start_time).total_seconds()
-            if duration_sec > point_count * max_duration_sec_per_point:
-                continue
-
-            mean_lon = sum(point.lon for point in cluster_points) / point_count
-            mean_lat = sum(point.lat for point in cluster_points) / point_count
-            accuracies = [point.accuracy for point in cluster_points if point.accuracy is not None]
-            mean_accuracy = sum(accuracies) / len(accuracies) if accuracies else None
-            source_days = ",".join(sorted({point.source_date or start_time.strftime("%Y%m%d") for point in cluster_points}))
-
-            stays.append(
-                StayPoint(
+            temporal_cluster_parts = split_temporally_continuous(cluster_points, sequence_max_gap_sec)
+            for temporal_cluster_points in temporal_cluster_parts:
+                stay = _build_stay_from_points(
                     user_id=user_id,
-                    start_time=start_time,
-                    end_time=end_time,
-                    lon=mean_lon,
-                    lat=mean_lat,
-                    duration_sec=duration_sec,
-                    point_count=point_count,
-                    mean_accuracy=mean_accuracy,
-                    source_days=source_days,
+                    cluster_points=temporal_cluster_points,
+                    stay_min_points=stay_min_points,
+                    max_duration_sec_per_point=max_duration_sec_per_point,
                 )
-            )
+                if stay is not None:
+                    stays.append(stay)
 
     return merge_overlapping_stays(stays, merge_overlap_gap_sec)
 

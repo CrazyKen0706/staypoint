@@ -38,6 +38,27 @@ class StayDetectionTests(unittest.TestCase):
 
         self.assertEqual(stays, [])
 
+    def test_splits_same_place_morning_and_evening_stays(self) -> None:
+        origin_lon = 139.73494
+        origin_lat = 35.60625
+        morning = datetime(2021, 11, 1, 8, 0, 0)
+        evening = datetime(2021, 11, 1, 20, 0, 0)
+        points = [
+            TrackPoint("u1", morning, origin_lon, origin_lat, None, "20211101"),
+            TrackPoint("u1", morning + timedelta(seconds=60), origin_lon + 0.00002, origin_lat, None, "20211101"),
+            TrackPoint("u1", morning + timedelta(seconds=120), origin_lon, origin_lat + 0.00002, None, "20211101"),
+            TrackPoint("u1", evening, origin_lon, origin_lat, None, "20211101"),
+            TrackPoint("u1", evening + timedelta(seconds=60), origin_lon + 0.00002, origin_lat, None, "20211101"),
+            TrackPoint("u1", evening + timedelta(seconds=120), origin_lon, origin_lat + 0.00002, None, "20211101"),
+        ]
+
+        stays = detect_stays_for_user_day("u1", points, origin_lon, origin_lat)
+
+        self.assertEqual(len(stays), 2)
+        self.assertEqual([stay.point_count for stay in stays], [3, 3])
+        self.assertEqual(stays[0].start_time, morning)
+        self.assertEqual(stays[1].start_time, evening)
+
     def test_distance_is_reasonable_for_oimachi_scale(self) -> None:
         self.assertLess(distance_m(139.73494, 35.60625, 139.73504, 35.60625), 12)
 
