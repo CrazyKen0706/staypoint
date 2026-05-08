@@ -1,0 +1,1025 @@
+{
+  "docx": [
+    {
+      "file": "D:\\修论\\Paper\\2021.04.21_标题摘要目录逻辑修改_20260505.docx",
+      "paragraph_count": 20,
+      "headings": [
+        {
+          "index": 1,
+          "style": "Normal",
+          "text": "2021.04.21 论文前部结构修改稿"
+        },
+        {
+          "index": 4,
+          "style": "Heading 1",
+          "text": "一、标题修改"
+        },
+        {
+          "index": 6,
+          "style": "Heading 1",
+          "text": "二、摘要修改稿"
+        },
+        {
+          "index": 7,
+          "style": "Heading 2",
+          "text": "中文摘要"
+        },
+        {
+          "index": 9,
+          "style": "Heading 2",
+          "text": "英文摘要"
+        },
+        {
+          "index": 11,
+          "style": "Heading 2",
+          "text": "关键词"
+        },
+        {
+          "index": 14,
+          "style": "Heading 1",
+          "text": "三、摘要逻辑说明"
+        },
+        {
+          "index": 16,
+          "style": "Heading 1",
+          "text": "四、修改后的目录与各节写作内容"
+        },
+        {
+          "index": 18,
+          "style": "Heading 1",
+          "text": "五、建议从原目录中调整或删除的内容"
+        }
+      ],
+      "paragraphs": [
+        {
+          "index": 1,
+          "style": "Normal",
+          "text": "2021.04.21 论文前部结构修改稿"
+        },
+        {
+          "index": 2,
+          "style": "Normal",
+          "text": "标题、摘要、目录逻辑修改与各节写作内容说明"
+        },
+        {
+          "index": 3,
+          "style": "Normal",
+          "text": "说明：本文件根据原文件前 3-4 页内容整理，保留“TOD站域内停留行为”主线，删除或暂时移出“老年友好步行环境”主线。修改重点不是扩写正文，而是先把标题、摘要、目录和每个小标题下应写内容理顺，便于后续正式写作。"
+        },
+        {
+          "index": 4,
+          "style": "Heading 1",
+          "text": "一、标题修改"
+        },
+        {
+          "index": 6,
+          "style": "Heading 1",
+          "text": "二、摘要修改稿"
+        },
+        {
+          "index": 7,
+          "style": "Heading 2",
+          "text": "中文摘要"
+        },
+        {
+          "index": 8,
+          "style": "Normal",
+          "text": "TOD 站域不仅承担公共交通换乘和步行通行功能，也承载等待、休憩、消费与偶遇等日常停留活动。既有 TOD 与 walkability 研究多从密度、功能混合、交通可达性和步行连通性等角度评价站域空间，但对于“人在站域街道中是否停留、在哪里停留、为什么停留”的行为层面解释仍相对不足。为回应这一问题，本研究以东京都大井町站周边地区为对象，将 GPS 人流数据识别出的停留点作为站域 Place 功能与街道活力的行为代理指标，并在 street segment 尺度上整合空间句法指标、POI 功能配置指标、街景微观环境指标以及距车站距离变量，分析停留行为的空间分布及其建成环境影响机制。研究首先识别不同距离圈层和时间段中的停留活动分布特征，其次构建线段尺度的建成环境变量体系，并通过回归模型检验空间结构、商业设施与街景环境对停留强度的影响。预期研究将揭示：虽然距车站距离通常对停留行为具有负向影响，但在路网整合度较高、沿道设施较丰富且街景环境质量较好的街道中，距离衰减效应可能被削弱，远离站前核心区的街道仍有可能形成较高停留强度。本研究旨在从“空间结构-功能配置-微观体验”三个层面解释 TOD 站域内停留行为的形成机制，并为大井町站周边再开发与步行环境优化提供依据。"
+        },
+        {
+          "index": 9,
+          "style": "Heading 2",
+          "text": "英文摘要"
+        },
+        {
+          "index": 10,
+          "style": "Normal",
+          "text": "Transit-oriented development (TOD) station areas are not only transport nodes for transfer and pedestrian movement, but also urban places where waiting, resting, consumption, and social encounters occur. Existing TOD and walkability studies have mainly evaluated station areas through density, land-use mix, accessibility, and connectivity, while less attention has been paid to where people actually stay and what built environmental conditions support staying behaviour at the street level. Focusing on the area surrounding Oimachi Station in Tokyo, this study regards GPS-derived stay points as behavioural indicators of the place function and street vitality of a TOD station area. At the street-segment level, the study integrates space syntax indicators, POI-based functional variables, street-view-based micro-environmental indicators, and distance from the station to examine the spatial distribution and built environmental determinants of pedestrian staying behaviour. The analysis first identifies variations in staying activities across distance rings and time periods, and then tests how street network configuration, roadside facilities, and micro-scale streetscape conditions influence staying intensity. The expected findings suggest that although distance from the station generally suppresses staying behaviour, streets with higher network integration, richer roadside facilities, and better micro-scale environmental quality may weaken this distance-decay effect and support staying activities even outside the immediate station-front area. This study contributes to understanding the formation mechanism of staying behaviour in TOD station areas and provides planning implications for station-area vitality and walkable urban design."
+        },
+        {
+          "index": 11,
+          "style": "Heading 2",
+          "text": "关键词"
+        },
+        {
+          "index": 12,
+          "style": "Normal",
+          "text": "TOD站域；停留行为；空间句法；POI；街景语义分割；GPS人流数据；大井町"
+        },
+        {
+          "index": 13,
+          "style": "Normal",
+          "text": "TOD station area; staying behaviour; space syntax; POI; street view imagery; GPS human flow data; Oimachi"
+        },
+        {
+          "index": 14,
+          "style": "Heading 1",
+          "text": "三、摘要逻辑说明"
+        },
+        {
+          "index": 16,
+          "style": "Heading 1",
+          "text": "四、修改后的目录与各节写作内容"
+        },
+        {
+          "index": 18,
+          "style": "Heading 1",
+          "text": "五、建议从原目录中调整或删除的内容"
+        },
+        {
+          "index": 19,
+          "style": "List Bullet",
+          "text": "原目录中“Research Background: Population Ageing and Urban Mobility Challenges”等老年友好步行内容，建议移出本论文主线，避免研究对象从 TOD 停留行为转向老年人 mobility。"
+        },
+        {
+          "index": 20,
+          "style": "List Bullet",
+          "text": "原目录中的 Method 部分可以保留技术模块，但小标题应从“怎么做数据”改成“如何构建因变量/自变量/模型”，这样更符合论文逻辑。"
+        },
+        {
+          "index": 21,
+          "style": "List Bullet",
+          "text": "Study Area 建议提前到 Method 之前，参考前辈论文常见结构：先交代对象和数据，再说明方法。"
+        },
+        {
+          "index": 22,
+          "style": "List Bullet",
+          "text": "Results 和 Discussion 应分开：Results 回答模型发现，Discussion 解释机制、贡献和规划意义。"
+        },
+        {
+          "index": 23,
+          "style": "List Bullet",
+          "text": "摘要中的“预期结果表明”如果已有实证结果，定稿时应改为“结果表明”；如果还未完成模型，则保持“旨在检验/预期揭示”。"
+        }
+      ],
+      "tables": [
+        {
+          "index": 1,
+          "rows": [
+            [
+              "项目",
+              "修改稿",
+              "修改理由"
+            ],
+            [
+              "中文题目",
+              "大井町站域内停留行为的空间分布及建成环境影响机制研究",
+              "题目直接点出研究对象“大井町站域”、行为对象“停留行为”、分析重点“空间分布”和解释目标“建成环境影响机制”。"
+            ],
+            [
+              "英文题目",
+              "Spatial Distribution and Built Environment Determinants of Staying Behaviour in the Oimachi Station Area",
+              "比原题更简洁，避免标题中同时堆叠 street network、roadside facilities、distance 等多个变量；这些内容放入摘要和方法中说明即可。"
+            ],
+            [
+              "可选副标题",
+              "A Segment-Level Analysis Integrating GPS Stay Points, Space Syntax, POI, and Street View Indicators",
+              "若导师希望方法特征更清楚，可作为副标题使用；若正文标题需简洁，则不建议放入主标题。"
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "rows": [
+            [
+              "摘要段落功能",
+              "应写内容",
+              "注意点"
+            ],
+            [
+              "研究背景",
+              "TOD 站域不仅是交通节点，也具有公共生活和停留活动发生的场所功能。",
+              "不要一开始就介绍空间句法、POI、街景等技术。"
+            ],
+            [
+              "研究空白",
+              "既有 TOD/walkability 研究偏重可达性、通行和静态环境指标，缺少对 street-level 停留行为的解释。",
+              "把 gap 写成行为层面的不足，而不是单纯说“没人用过这些数据”。"
+            ],
+            [
+              "研究对象与数据",
+              "以大井町站周边为对象，使用 GPS 停留点、空间句法、POI、街景指标。",
+              "说明所有数据最后统一到 street segment/link。"
+            ],
+            [
+              "研究方法",
+              "先描述停留分布，再建变量体系，再用回归模型检验影响机制。",
+              "摘要里不需要展开所有算法参数。"
+            ],
+            [
+              "预期发现/贡献",
+              "距站距离有负向影响，但高整合度、丰富 POI 和较好街景环境可能支撑远站区域停留。",
+              "如果结果尚未完全跑出，可用“旨在揭示”或“预期检验”。"
+            ]
+          ]
+        },
+        {
+          "index": 3,
+          "rows": [
+            [
+              "目录小标题",
+              "本节功能",
+              "应该写的内容"
+            ],
+            [
+              "1 Introduction 绪论",
+              "说明为什么要研究 TOD 站域内的停留行为，并提出研究问题。",
+              "从 TOD 站域的交通节点功能写到场所功能，说明停留行为为何能反映站域活力。最后提出 RQ、假设与论文结构。"
+            ],
+            [
+              "1.1 Research Background 研究背景",
+              "建立城市与政策背景。",
+              "写日本/东京推进 walkable、站城一体、再开发和公共空间活力提升的背景；说明站域空间不应只被理解为换乘和通过空间。"
+            ],
+            [
+              "1.2 From Movement to Staying 从通过到停留",
+              "完成核心概念转换。",
+              "区分 movement/walking 与 staying/stationary activity：前者体现通行和可达，后者更能反映场所吸引力、休憩、消费、等待和公共生活。"
+            ],
+            [
+              "1.3 Research Gap and Methodological Opportunity 研究空白与方法机会",
+              "指出为什么已有研究还不够。",
+              "写 TOD 和 walkability 研究多用静态指标或通行指标，金森研究已讨论步道结构和 POI，但仍缺少路网拓扑、街景微观环境与 GPS 停留行为的综合验证。"
+            ],
+            [
+              "1.4 Research Questions and Objectives 研究问题与目的",
+              "明确论文要回答什么。",
+              "列出 RQ1：不同圈层/时间段的停留分布；RQ2：空间结构、POI、街景如何影响停留；RQ3：远站区域中哪些条件能削弱距离衰减。对应写 H1-H4。"
+            ],
+            [
+              "1.5 Analytical Framework 研究框架",
+              "交代整体分析逻辑。",
+              "用文字或图说明：GPS 停留强度作为因变量；空间句法、POI、街景环境作为解释变量；距站距离、时间段和 segment 长度作为控制或交互因素。"
+            ],
+            [
+              "2 Literature Review 先行研究综述",
+              "从理论到方法建立论文位置。",
+              "不要只按技术路径罗列，应按“TOD场所功能-停留行为-建成环境解释-行为数据方法”的逻辑组织。"
+            ],
+            [
+              "2.1 TOD Station Areas and Node-Place Model TOD站域与节点-场所模型",
+              "给 TOD 研究提供理论锚点。",
+              "写 Bertolini 的 Node-Place 模型，说明站域既有交通节点价值，也有土地利用和活动场所价值；指出 Place 维度需要行为数据补充。"
+            ],
+            [
+              "2.2 Link and Place Framework 街道的通行与场所双重属性",
+              "把研究尺度从站域落到街道。",
+              "写 Jones & Boujenko 的 Link-Place 框架：街道同时支持流动和活动。本研究关注的是 Place 功能如何在 street segment 上表现为停留。"
+            ],
+            [
+              "2.3 Pedestrian Staying Behaviour and Urban Vitality 停留行为与街道活力",
+              "说明为什么停留重要。",
+              "引用 Gehl/Whyte/Jacobs 等公共生活研究，说明停留、休憩、社交和可选择活动是城市活力的重要表现。"
+            ],
+            [
+              "2.4 Street Network Configuration and Staying Behaviour 路网结构与停留行为",
+              "支撑空间句法变量。",
+              "写 Hillier 的 Natural Movement 理论，说明 integration 和 choice 代表到达潜力和穿行潜力；提出高整合度街道可能拥有更高人流基础和停留机会。"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "file": "D:\\修论\\Paper\\硕士论文结构整理与先行研究补强_20260505.docx",
+      "paragraph_count": 62,
+      "headings": [
+        {
+          "index": 4,
+          "style": "Heading 1",
+          "text": "一、当前结构诊断"
+        },
+        {
+          "index": 6,
+          "style": "Heading 1",
+          "text": "二、建议标题与研究定位"
+        },
+        {
+          "index": 14,
+          "style": "Heading 1",
+          "text": "三、研究问题与假设"
+        },
+        {
+          "index": 16,
+          "style": "Heading 1",
+          "text": "四、修改后的论文目录"
+        },
+        {
+          "index": 18,
+          "style": "Heading 1",
+          "text": "五、各章写作要点"
+        },
+        {
+          "index": 19,
+          "style": "Heading 2",
+          "text": "Introduction"
+        },
+        {
+          "index": 23,
+          "style": "Heading 2",
+          "text": "Literature Review"
+        },
+        {
+          "index": 24,
+          "style": "List Bullet",
+          "text": "第一节写 TOD 与 Node-Place，说明 place 不能只用土地利用静态指标代理。"
+        },
+        {
+          "index": 25,
+          "style": "List Bullet",
+          "text": "第二节写 Link-Place 与公共生活，说明 staying 是比 passing 更接近场所品质的行为。"
+        },
+        {
+          "index": 26,
+          "style": "List Bullet",
+          "text": "第三节以后再进入空间句法、POI、街景、GPS 方法，避免工具先行。"
+        },
+        {
+          "index": 27,
+          "style": "Heading 2",
+          "text": "Study Area and Data"
+        },
+        {
+          "index": 31,
+          "style": "Heading 2",
+          "text": "Methodology"
+        },
+        {
+          "index": 35,
+          "style": "Heading 2",
+          "text": "Results / Discussion"
+        },
+        {
+          "index": 39,
+          "style": "Heading 1",
+          "text": "六、变量与分析单元设计"
+        },
+        {
+          "index": 41,
+          "style": "Heading 1",
+          "text": "七、模型实施建议"
+        },
+        {
+          "index": 47,
+          "style": "Heading 1",
+          "text": "八、先行研究对应表"
+        },
+        {
+          "index": 49,
+          "style": "Heading 1",
+          "text": "九、可直接改写进正文的段落骨架"
+        },
+        {
+          "index": 50,
+          "style": "Heading 2",
+          "text": "Introduction 段落骨架"
+        },
+        {
+          "index": 54,
+          "style": "Heading 2",
+          "text": "研究定位段落骨架"
+        },
+        {
+          "index": 56,
+          "style": "Heading 1",
+          "text": "十、下一步写作与数据检查清单"
+        },
+        {
+          "index": 58,
+          "style": "Heading 1",
+          "text": "参考文献与检索链接"
+        }
+      ],
+      "paragraphs": [
+        {
+          "index": 1,
+          "style": "Title",
+          "text": "硕士论文结构整理与先行研究补强"
+        },
+        {
+          "index": 2,
+          "style": "Normal",
+          "text": "主题：TOD站域内停留行为研究｜对象：大井町站周边"
+        },
+        {
+          "index": 3,
+          "style": "Normal",
+          "text": "本文档基于现有论文目录、金森研究框架及研究室前辈硕士论文结构整理而成，目标是将当前论文从“技术堆叠”调整为“问题驱动”的研究叙事，并为各章节补充可对应的先行研究与写作任务。"
+        },
+        {
+          "index": 4,
+          "style": "Heading 1",
+          "text": "一、当前结构诊断"
+        },
+        {
+          "index": 6,
+          "style": "Heading 1",
+          "text": "二、建议标题与研究定位"
+        },
+        {
+          "index": 7,
+          "style": "Normal",
+          "text": "建议中文题目：大井町 TOD 站域内停留行为的空间分布及建成环境影响机制研究"
+        },
+        {
+          "index": 8,
+          "style": "Normal",
+          "text": "建议英文题目：Spatial Distribution and Built Environment Determinants of Staying Behaviour in the Oimachi TOD Station Area"
+        },
+        {
+          "index": 9,
+          "style": "Normal",
+          "text": "研究定位：本研究不把 GPS 数据仅作为人流热力图，而是将停留点视为站域 Place 功能的行为代理指标。论文要回答的不是“我能用哪些数据”，而是“站域空间中哪些位置能够把经过的人转化为停留的人”。"
+        },
+        {
+          "index": 10,
+          "style": "List Bullet",
+          "text": "理论锚点：TOD 的 Node-Place 模型与街道 Link-Place 框架。"
+        },
+        {
+          "index": 11,
+          "style": "List Bullet",
+          "text": "行为对象：区别于 walking / movement 的 staying / stationary activity。"
+        },
+        {
+          "index": 12,
+          "style": "List Bullet",
+          "text": "方法贡献：在线段尺度上整合 GPS 停留、空间句法、POI 与街景语义分割指标。"
+        },
+        {
+          "index": 13,
+          "style": "List Bullet",
+          "text": "规划意义：识别车站远方仍能支撑停留的空间条件，为大井町再开发范围内的步行环境与街道活力提升提供依据。"
+        },
+        {
+          "index": 14,
+          "style": "Heading 1",
+          "text": "三、研究问题与假设"
+        },
+        {
+          "index": 16,
+          "style": "Heading 1",
+          "text": "四、修改后的论文目录"
+        },
+        {
+          "index": 18,
+          "style": "Heading 1",
+          "text": "五、各章写作要点"
+        },
+        {
+          "index": 19,
+          "style": "Heading 2",
+          "text": "Introduction"
+        },
+        {
+          "index": 20,
+          "style": "List Bullet",
+          "text": "不要从“我用了空间句法/POI/街景/GPS”开头，而要从“站域空间如何从通过空间转化为停留空间”开头。"
+        },
+        {
+          "index": 21,
+          "style": "List Bullet",
+          "text": "建议使用金森研究的日本 walkable 政策背景，但将 gap 改写为：金森解释了步道结构和 POI，本研究进一步检验路网拓扑与街景体验。"
+        },
+        {
+          "index": 22,
+          "style": "List Bullet",
+          "text": "贡献写三点即可：行为测量贡献、变量整合贡献、站域规划贡献。"
+        },
+        {
+          "index": 23,
+          "style": "Heading 2",
+          "text": "Literature Review"
+        },
+        {
+          "index": 24,
+          "style": "List Bullet",
+          "text": "第一节写 TOD 与 Node-Place，说明 place 不能只用土地利用静态指标代理。"
+        },
+        {
+          "index": 25,
+          "style": "List Bullet",
+          "text": "第二节写 Link-Place 与公共生活，说明 staying 是比 passing 更接近场所品质的行为。"
+        },
+        {
+          "index": 26,
+          "style": "List Bullet",
+          "text": "第三节以后再进入空间句法、POI、街景、GPS 方法，避免工具先行。"
+        },
+        {
+          "index": 27,
+          "style": "Heading 2",
+          "text": "Study Area and Data"
+        },
+        {
+          "index": 28,
+          "style": "List Bullet",
+          "text": "研究边界必须固定：建议优先使用大井町再开发范围叠加 500m 或 10 分钟步行圈；若二者不一致，正文中解释主边界与补充分析边界。"
+        },
+        {
+          "index": 29,
+          "style": "List Bullet",
+          "text": "所有数据最终统一到 street segment/link。POI 用缓冲区聚合，街景用采样点聚合，GPS 停留点匹配到最近或可达 segment。"
+        },
+        {
+          "index": 30,
+          "style": "List Bullet",
+          "text": "数据表应写清时间范围，否则街景年份、POI 时点、GPS 时段不一致会成为审查风险。"
+        },
+        {
+          "index": 31,
+          "style": "Heading 2",
+          "text": "Methodology"
+        },
+        {
+          "index": 32,
+          "style": "List Bullet",
+          "text": "停留点算法不只给公式，还要解释为什么该阈值适合本数据采样间隔。"
+        },
+        {
+          "index": 33,
+          "style": "List Bullet",
+          "text": "主模型建议用负二项回归，因为停留数是计数且可能过度离散；若使用停留密度或 log(Y+1)，可补 OLS。"
+        },
+        {
+          "index": 34,
+          "style": "List Bullet",
+          "text": "必须加敏感性分析：停留阈值、匹配缓冲距离、圈层划分、是否剔除站前异常高值。"
+        },
+        {
+          "index": 35,
+          "style": "Heading 2",
+          "text": "Results / Discussion"
+        },
+        {
+          "index": 36,
+          "style": "List Bullet",
+          "text": "Results 只报告事实和模型结果，Discussion 再解释为什么近站/远站机制不同。"
+        },
+        {
+          "index": 37,
+          "style": "List Bullet",
+          "text": "远站区域是论文亮点：不要只说近站停留多，要找出远站中仍有停留的 segment，并解释它们的空间结构、POI、街景条件。"
+        },
+        {
+          "index": 38,
+          "style": "List Bullet",
+          "text": "与金森研究对比时保持尊重：表述为“在步道结构与沿道设施之外，本研究进一步补充了路网拓扑与眼平微观环境”。"
+        },
+        {
+          "index": 39,
+          "style": "Heading 1",
+          "text": "六、变量与分析单元设计"
+        },
+        {
+          "index": 41,
+          "style": "Heading 1",
+          "text": "七、模型实施建议"
+        },
+        {
+          "index": 42,
+          "style": "List Number",
+          "text": "描述统计：先画停留点核密度图、segment 停留强度图、圈层箱线图与时间热力图。"
+        },
+        {
+          "index": 43,
+          "style": "List Number",
+          "text": "主模型：若因变量为停留数，采用负二项回归，offset 使用 log(segment 长度)；若因变量为单位长度停留密度，可用 log(Y+1) OLS 作为解释性模型。"
+        },
+        {
+          "index": 44,
+          "style": "List Number",
+          "text": "分层模型：模型1仅放距站距离与segment长度；模型2加入空间句法；模型3加入POI；模型4加入街景；模型5加入交互项。"
+        },
+        {
+          "index": 45,
+          "style": "List Number",
+          "text": "交互项：重点检验 距站距离 × integration、距站距离 × POI质量、integration × GVI/街景质量。"
+        },
+        {
+          "index": 46,
+          "style": "List Number",
+          "text": "稳健性：改变停留阈值、POI缓冲距离、圈层边界；检查 VIF、多重共线性、残差空间自相关 Moran's I；必要时补空间误差模型或 GWR。"
+        },
+        {
+          "index": 47,
+          "style": "Heading 1",
+          "text": "八、先行研究对应表"
+        },
+        {
+          "index": 49,
+          "style": "Heading 1",
+          "text": "九、可直接改写进正文的段落骨架"
+        },
+        {
+          "index": 50,
+          "style": "Heading 2",
+          "text": "Introduction 段落骨架"
+        },
+        {
+          "index": 51,
+          "style": "Normal",
+          "text": "TOD 站域通常被视为公共交通节点与城市功能集聚区的结合体。既有研究围绕密度、多样性、设计、目的地可达性和公共交通距离等指标，已经较充分地讨论了站域空间如何支持步行与公共交通利用。然而，站域空间并不只是承担换乘和通过功能的交通界面，也承担等待、休憩、消费、社交和偶遇等日常公共生活功能。"
+        },
+        {
+          "index": 52,
+          "style": "Normal",
+          "text": "因此，仅从可达性或人流通过量评价站域空间，可能无法充分解释街道作为场所的实际使用状态。与移动行为相比，停留行为更直接反映了人是否愿意在某一街道环境中花费时间，也更接近街道 Place 功能和空间活力的行为表现。特别是在以车站为中心高度集约的东京站域中，停留活动是否过度集中于站前，以及距离车站较远的街道在何种条件下仍能产生停留，是理解站域空间品质的重要问题。"
+        },
+        {
+          "index": 53,
+          "style": "Normal",
+          "text": "本研究以大井町站周边为对象，将 GPS 数据识别出的停留点作为行为层面的因变量，并在 street segment 尺度上整合空间句法、POI 与街景环境指标，分析 TOD 站域内停留活动的空间分布及其建成环境影响机制。"
+        },
+        {
+          "index": 54,
+          "style": "Heading 2",
+          "text": "研究定位段落骨架"
+        },
+        {
+          "index": 55,
+          "style": "Normal",
+          "text": "与金森研究相比，本研究并不否定步道结构与沿道 POI 对停留的解释作用，而是在其基础上进一步引入路网拓扑结构与街景微观环境。前者用于刻画街道在整体网络中的到达潜力与穿行潜力，后者用于刻画行人在眼平视角中实际感知到的绿化、开敞度、围合度与停留支持条件。由此，本研究试图从“空间结构-功能配置-微观体验”三个层次解释站域停留行为。"
+        },
+        {
+          "index": 56,
+          "style": "Heading 1",
+          "text": "十、下一步写作与数据检查清单"
+        },
+        {
+          "index": 58,
+          "style": "Heading 1",
+          "text": "参考文献与检索链接"
+        },
+        {
+          "index": 59,
+          "style": "Normal",
+          "text": "Bertolini, L. (1999). Spatial Development Patterns and Public Transport: The Application of an Analytical Model in the Netherlands. Planning Practice and Research, 14(2), 199-210. DOI: 10.1080/02697459915724"
+        },
+        {
+          "index": 60,
+          "style": "Normal",
+          "text": "Chorus, P., & Bertolini, L. (2011). An application of the node-place model to explore the spatial development dynamics of station areas in Tokyo. Journal of Transport and Land Use, 4(1), 45-58. DOI: 10.5198/jtlu.v4i1.145"
+        },
+        {
+          "index": 61,
+          "style": "Normal",
+          "text": "Vale, D. S. (2015). Transit-oriented development, integration of land use and transport, and pedestrian accessibility. Journal of Transport Geography, 45, 70-80. DOI: 10.1016/j.jtrangeo.2015.04.009"
+        },
+        {
+          "index": 62,
+          "style": "Normal",
+          "text": "Jones, P., & Boujenko, N. (2009). Link and Place: A new approach to street planning and design. Australasian Transport Research Forum."
+        },
+        {
+          "index": 63,
+          "style": "Normal",
+          "text": "Hillier, B., Penn, A., Hanson, J., Grajewski, T., & Xu, J. (1993). Natural Movement: Or, Configuration and Attraction in Urban Pedestrian Movement. Environment and Planning B, 20(1), 29-66. DOI: 10.1068/b200029"
+        },
+        {
+          "index": 64,
+          "style": "Normal",
+          "text": "Zheng, Y., Zhang, L., Xie, X., & Ma, W.-Y. (2009). Mining Interesting Locations and Travel Sequences from GPS Trajectories. WWW 2009, 791-800. DOI: 10.1145/1526709.1526816"
+        },
+        {
+          "index": 65,
+          "style": "Normal",
+          "text": "Kato, R., Luo, L., Fourie, P. J., Do, C. X., Wakasa, H., Fujiwara, A., & Chikaraishi, M. (2024). Evaluating and Validating Stay Point Detection Algorithms with different GPS Log Intervals. Procedia Computer Science, 238, 803-808. DOI: 10.1016/j.procs.2024.06.095"
+        },
+        {
+          "index": 66,
+          "style": "Normal",
+          "text": "Nagata, S., Nakaya, T., Hanibuchi, T., Amagasa, S., Kikuchi, H., & Inoue, S. (2020). Objective scoring of streetscape walkability related to leisure walking. Health & Place, 66, 102428. DOI: 10.1016/j.healthplace.2020.102428"
+        },
+        {
+          "index": 67,
+          "style": "Normal",
+          "text": "Ki, D., & Lee, S. (2021). Analyzing the effects of Green View Index of neighborhood streets on walking time using Google Street View and deep learning. Landscape and Urban Planning, 205, 103920. DOI: 10.1016/j.landurbplan.2020.103920"
+        },
+        {
+          "index": 68,
+          "style": "Normal",
+          "text": "Eom, S., Kim, H., Hasegawa, D., & Yamada, I. (2024). Pedestrian movement with large-scale GPS records and transit-oriented development attributes. Sustainable Cities and Society, 102, 105223. DOI: 10.1016/j.scs.2024.105223"
+        }
+      ],
+      "tables": [
+        {
+          "index": 1,
+          "rows": [
+            [
+              "诊断项",
+              "目前状态",
+              "修改方向"
+            ],
+            [
+              "论文主线",
+              "2021.04.21 文件中同时保留 TOD 停留行为与老年友好步行两条线，容易导致研究对象、因变量和文献综述发散。",
+              "本稿统一收束为“大井町 TOD 站域内停留行为”，老年友好相关段落暂不进入正文主线。"
+            ],
+            [
+              "研究问题",
+              "已有空间句法、POI、街景、GPS 等技术路径，但问题意识尚未完全反推清楚。",
+              "以“站域不只是通行节点，也是公共生活与停留发生的场所”为核心，先提出 RQ，再配置方法。"
+            ],
+            [
+              "与金森研究关系",
+              "金森主要分析步道结构类别、沿道 POI 与距站距离对停留数的影响。",
+              "本研究在其基础上增加路网拓扑结构与街景微观环境，形成“空间结构-功能配置-微观体验”的解释框架。"
+            ],
+            [
+              "章节组织",
+              "现有目录偏按工具排列，Introduction 与 Literature Review 之间的故事连接较弱。",
+              "采用前辈论文常见的 Introduction、Literature Review、Study Area/Data、Method、Results、Discussion、Conclusion 主线。"
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "rows": [
+            [
+              "编号",
+              "研究问题",
+              "对应假设",
+              "结果章节表达"
+            ],
+            [
+              "RQ1",
+              "大井町站域内停留活动在不同距离圈层与时间段中如何分布？",
+              "H1：停留活动存在明显距离圈层差异，近站区停留强度更高；工作日/周末、白天/夜间存在时间异质性。",
+              "先用地图、圈层统计、时间分组图说明“哪里停、何时停”。"
+            ],
+            [
+              "RQ2",
+              "空间结构、POI 功能配置、街景微观环境分别如何影响停留强度？",
+              "H2：空间整合度较高的 segment 更容易形成较高停留强度；H3：POI 密度、多样性和质量会促进停留。",
+              "用主模型比较各变量组的方向、显著性和解释力。"
+            ],
+            [
+              "RQ3",
+              "距离车站较远区域中，哪些环境条件会削弱距离衰减并支撑停留？",
+              "H4：较好的街景环境会强化空间结构与停留行为之间的正相关；POI 与街景质量可能减弱距站距离的负效应。",
+              "重点报告距离交互项、圈层分组模型或远站区域案例。"
+            ]
+          ]
+        },
+        {
+          "index": 3,
+          "rows": [
+            [
+              "章节",
+              "功能",
+              "需要写入的内容"
+            ],
+            [
+              "1 Introduction",
+              "建立问题意识",
+              "TOD/站域的重要性；现有评价偏重通行与可达；停留行为作为 Place 功能；数据方法带来的机会；提出 RQ 与贡献。"
+            ],
+            [
+              "1.1 Research Background",
+              "从交通节点到公共生活",
+              "写大井町站域、再开发、walkable 政策背景，但避免一开始就讲技术。"
+            ],
+            [
+              "1.2 Research Gap",
+              "指出停留行为缺位",
+              "TOD 研究多测 node/place 静态条件，walking 研究多测通过行为，缺少街道级 GPS 停留验证。"
+            ],
+            [
+              "1.3 Objectives and Questions",
+              "锁定 RQ",
+              "列出 RQ1-RQ3 与 H1-H4。"
+            ],
+            [
+              "1.4 Thesis Framework",
+              "交代论文结构",
+              "用一段话说明各章如何回答问题。"
+            ],
+            [
+              "2 Literature Review",
+              "搭理论桥",
+              "按概念链写：TOD/Node-Place、Link-Place、停留行为、空间句法、POI/活力、GPS与街景。"
+            ],
+            [
+              "3 Study Area and Data",
+              "定义对象和材料",
+              "大井町站周边边界、圈层设定、数据来源、分析单元、预处理原则。"
+            ],
+            [
+              "4 Methodology",
+              "说明如何验证",
+              "停留点识别、segment 聚合、变量构建、模型设定、稳健性检验。"
+            ],
+            [
+              "5 Results",
+              "按 RQ 展示发现",
+              "空间/时间分布、主模型、交互作用、远站支撑条件。"
+            ],
+            [
+              "6 Discussion",
+              "解释机制和贡献",
+              "距离衰减、空间结构-功能-街景综合机制、与金森研究对比、规划启示、局限性。"
+            ],
+            [
+              "7 Conclusion",
+              "简洁收束",
+              "主要发现、理论贡献、实践启示、未来研究。"
+            ]
+          ]
+        },
+        {
+          "index": 4,
+          "rows": [
+            [
+              "变量组",
+              "变量示例",
+              "数据来源",
+              "聚合到 segment 的方式",
+              "文献依据"
+            ],
+            [
+              "因变量",
+              "停留点数量、总停留时长、单位长度停留密度",
+              "GPS / 人流数据",
+              "停留点识别后匹配到最近可行 street segment，并按时间段、圈层汇总。",
+              "Zheng et al. 2009；Kato et al. 2024；Eom et al. 2024"
+            ],
+            [
+              "空间结构",
+              "Integration、Choice、距车站网络距离、距车站欧氏距离",
+              "道路/步道网络、空间句法计算结果",
+              "道路中心线或步道 link 拓扑清理后计算，再直接赋值给 segment。",
+              "Hillier et al. 1993；Hillier & Iida 2005"
+            ],
+            [
+              "功能配置",
+              "POI 密度、POI 类型多样性、热门 POI、高评价 POI",
+              "Google Places / POI 数据",
+              "以 segment 中点或线段缓冲区统计，推荐 30m/50m 做敏感性比较。",
+              "Bertolini 1999；Vale 2015；街道活力研究"
+            ],
+            [
+              "街景环境",
+              "GVI、天空开敞度、围合度、人行道/斑马线/座椅可见性",
+              "Google Street View 或其他街景图像、语义分割结果",
+              "沿 segment 生成采样点，对连续变量取均值，对二元变量取比例或是否存在。",
+              "Nagata et al. 2020；Ki & Lee 2021"
+            ],
+            [
+              "控制变量",
+              "天气、工作日/周末、时段、segment 长度、距大型设施距离",
+              "气象、日历、GIS辅助数据",
+              "按日期/时间段或 segment 属性并入模型。",
+              "GPS 行为研究与站域研究通用控制项"
+            ]
+          ]
+        },
+        {
+          "index": 5,
+          "rows": [
+            [
+              "主题",
+              "代表文献",
+              "在本论文中的作用",
+              "放入章节"
+            ],
+            [
+              "TOD / Node-Place",
+              "Bertolini (1999)",
+              "提出 station area 同时具有 node value 与 place value，是本研究从交通节点转向场所功能的上位理论。",
+              "Introduction / Literature Review"
+            ],
+            [
+              "东京站域 TOD",
+              "Chorus & Bertolini (2011)",
+              "将 Node-Place 模型用于东京，说明东京铁路与土地利用高度耦合，适合作为站域研究背景。",
+              "Study Area 背景 / Literature Review"
+            ],
+            [
+              "TOD + 步行可达",
+              "Vale (2015)",
+              "将 Node-Place 与 pedestrian shed ratio 结合，说明单纯 node/place 指标需要补充步行环境。",
+              "Literature Review"
+            ],
+            [
+              "Link-Place",
+              "Jones & Boujenko (2009)",
+              "区分街道 link 功能与 place 功能，为将停留行为视为 Place 功能代理指标提供理论锚点。",
+              "Introduction / Discussion"
+            ],
+            [
+              "公共生活与停留",
+              "Gehl (2010/2011), Whyte",
+              "将 walking 与 staying、necessary/optional/social activities 区分，说明停留行为的理论意义。",
+              "Literature Review"
+            ],
+            [
+              "空间句法",
+              "Hillier et al. (1993)",
+              "Natural Movement 理论指出街道网络构型本身会影响行人流动，integration 是关键指标。",
+              "Literature Review / Method"
+            ],
+            [
+              "GPS停留识别",
+              "Zheng et al. (2009)",
+              "从 GPS 轨迹中识别 interesting locations 和 travel sequences，是停留点识别的重要方法来源。",
+              "Method"
+            ],
+            [
+              "GPS算法验证",
+              "Kato et al. (2024)",
+              "比较不同 GPS log interval 与停留识别算法，指出 ST-DBSCAN 在一定采样间隔下表现较好，支撑参数敏感性分析。",
+              "Method / Limitations"
+            ],
+            [
+              "街景语义分割",
+              "Nagata et al. (2020)",
+              "使用 Google Street View 与语义分割构建 streetscape walkability 分数，证明街景要素可大规模量化。",
+              "Literature Review / Method"
+            ],
+            [
+              "绿视率与步行",
+              "Ki & Lee (2021)",
+              "用 GVI 与深度学习分析步行时间，说明眼平绿化比传统俯视绿地指标更接近行人体验。",
+              "Method / Discussion"
+            ],
+            [
+              "TOD + GPS行人行为",
+              "Eom et al. (2024)",
+              "提出基于大规模 GPS 的 pedestrian movement indices，并分析 TOD 5D 属性影响，是本研究最近的直接参照。",
+              "Literature Review / Method"
+            ]
+          ]
+        },
+        {
+          "index": 6,
+          "rows": [
+            [
+              "优先级",
+              "任务",
+              "完成标准"
+            ],
+            [
+              "高",
+              "删除或移出老年友好步行主线段落",
+              "正文主线只保留 TOD 停留行为；老年友好内容如需保留，仅作为未来研究或附录备份。"
+            ],
+            [
+              "高",
+              "固定研究边界与圈层",
+              "明确大井町再开发范围、500m圈或10分钟步行圈哪个是主边界。"
+            ],
+            [
+              "高",
+              "确认 GPS 数据字段与采样间隔",
+              "能说明 ID、时间、坐标、秘匿标记、采样间隔，并据此选择停留阈值。"
+            ],
+            [
+              "高",
+              "统一分析单元",
+              "所有变量最终落到 street segment/link，避免 MAUP 与尺度混乱。"
+            ],
+            [
+              "中",
+              "补齐参考文献原文和 DOI",
+              "至少为每个变量组准备 3-5 篇核心文献。"
+            ],
+            [
+              "中",
+              "制作一张研究框架图",
+              "图中显示：GPS停留强度 ← 空间结构 / POI / 街景环境 + 距站距离与时间控制。"
+            ],
+            [
+              "中",
+              "跑一个小样本模型",
+              "先用两天数据或部分区域验证流程，再扩展到完整时间范围。"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "pdf": {
+    "file": "C:\\Users\\14572\\Zotero\\storage\\3DRZ48E5\\E4-01金森.pdf",
+    "page_count": 4,
+    "pages": [
+      {
+        "page": 1,
+        "text": "1／4 駅からの距離を考慮した歩道構造と沿道施設が滞在数に及ぼす影響 －大井町駅と吉祥寺駅周辺部を対象として－ 金森貴洋*・中山俊**・厳網林*** The Influence of Sidewalk Structure and Roadside Facilities on Pedestrian Stay, Considering Distance from the Station - A Case Study of the Areas Surrounding Oimachi and Kichijoji Stations - Takahiro Kanamori *, Shun Nakayama **, Wanglin Yan*** Abstract: To promote walkable urban environments, it is essential to create pedestrian spaces and environments that encourage stays —even in areas far from stations. This study examines how spatial characteristics such as sidewalk structure and roadside facilities influence pedestrian stays, considering distance from stations. Focusing on areas around Ōimachi and Kichijōji Stations, we applied a Generalized Linear Model (GLM) and score -based analysis using pedestrian flow data aggregated at the sidewalk -link level. Results revealed that, in addition to proximity, good walking environments—such as pedestrian-only sidewalks and highly rated POIs —significantly promote stays. In particular, Kichijōji showed stays even in distant areas where spatial conditions wer e good. Keywords: ウォーカブル（walkable），滞在（pedestrian stay），歩道構造（sidewalk structure），沿道施設 （Point of Interest） １．はじめに 国は，人口減少や中心市街地の衰退といった問題から， まちなかのにぎわいと滞在の創出を目的として，ウォー カブルなまちづくりを推進している（国土交通省，2024）． 特に，2020 年の都市再生特別措置法と道路法の改正によ って，歩行空間の構造的改善や滞在を誘発する空間要素 の導入を後押しする制度が整備され，通行だけでなく滞 在したくなる空間の創出を目指している． 首都圏のように公共交通が高度 に整備され，駅を核に 滞在を促す施設が集積する地域では，自動車依存の脱却 よりも，滞在行動などの質を高める空間介入が重要 とさ れる（伊藤ほか，2021）．駅を中心とした都市構造は滞在 の核を形成する一方で，駅近傍に過度に集中し，駅遠方 では歩行者の滞在が限定的となりやすい ．こうした空間 的偏在は，都市内のにぎわいの広がりを阻害し，地域全 体の活力を低減させる要因となる可能性がある．商店街 における滞留を誘発させる条件に着目した研究（有馬ほ か，2008；澤田ほか，2025）や，大規模開発が滞在に与え る影響を明らかにした研究（天谷ほか，2024）などはみら れるが，駅からの距離を考慮しつつ，駅から離れた場所 においても滞在を促進できる 歩行空間や滞在を誘発する 空間要素の特性を明らかにした研究はみられない． そこで本研究では，歩行空間として歩道構造，滞在を 誘発する空間として歩道沿道の施設 （POI） に着目し，歩 行者の滞在をにぎわいの代理指標とみなし， 駅からの距 離を考慮しつつ，歩道の構造種別および沿道 POI の量と 質が滞在数とどのように関連するかを明らかにする．対 象は，乗降規模が類似し，POI の分布と質が異なる大井 町駅と吉祥寺駅の周辺部とする ．駅から離れた場所で滞 在を生み出す物的条件を示すことで ，都市部のウォーカ ブル整備に資する知見を得ることを目的とする． ２．研究手法 本研究では，各駅の重心から 500 m 圏を対象とし，歩 道リンクを分析単位として，駅からの距離を考慮しつつ， 歩道の構造種別，沿道 POI の数，口コミ数の多い POI の 数，口コミ評価の高い POI の数が滞在数にどのように関 連するかを検証する．手順としては，まず歩道ネットワ ークデータを整備し，ついで Google Maps から取得した POI 情報と，人流データから抽出した滞在情報を準備す る．これらを歩道リンクに付与し ，リンク中点における 駅からの経路上の最短距離に基づいて分析を実施する． ２.１ 歩道ネットワークデータの整備方法 歩道ネットワークデータは，国土交通省（2024）の仕様 に準拠して作成する．対象とする歩道は，道路，公園，公 共空間の通路，駅構内などの人が通行可能な経路とし， 時間帯により通行が制限される建物内の通路などは対象 外とする．歩道が明示されている場合は，歩道の中央に， * 正会員 株式会社パスコ（PASCO Corporation） 〒153-0042 東京都目黒区青葉台 4-9-6 日本地図センタービル 5F E-mail：tiarko7548@pasco.co.jp ** 正会員 専修大学ネットワーク情報学部（Senshu University） *** 正会員 慶應義塾大学環境情報学部（Keio University） E4-01 第34回地理情報システム学会学術研究発表大会 - E4-01 -"
+      },
+      {
+        "page": 2,
+        "text": "2／4 表１ 対象とする POI の場所タイプ amusement_park clothing_store meal_takeaway aquarium convenience_store movie_theater art_gallery department_store night_club bakery electronics_store park bar florist pet_store bicycle_store food restaurant book_store furniture_store shopping_mall bowling_alley grocery_or_supermarket store cafe home_goods_store supermarket casino jewelry_store tourist_attraction church liquor_store zoo 歩車一体の場合は車道中央にリンクを配置する． リンク の分割は，交差や分岐が生じる節点，または歩道の構造 種別が変化する地点を境として行う． 歩道の構造は，歩行者専用道路（歩道橋やペデストリ アンデッキを含む），物理的に歩道と車道が分離された歩 道 （以下，歩車分離），路面標示によって歩道と車道が分 離された歩道 （以下，路側帯），歩道と車道が一体化した 歩道（以下，歩車一体），横断歩道，横断歩道はないが横 断が可能な箇所（以下，横断箇所）に分類する． ２.２ POI データの取得方法 歩道リンクから 50 m のバッファ内に含まれる指定の 場所タイプの POI を歩道沿道の施設として抽出する．抽 出にあたっては Google Maps Platform が提供する Places Aggregate API を用い，Google 社の利用規定に従い API が 返す集計値のみを分析に使用する． 対象とする POI の場所タイプは，飲食・娯楽系，商業・ 小売系，文化・観光施設系のにぎわいを生み出すと考え られる施設とし，表１に示すものとする．これらの POI のうち，各バッファ内に存在する POI（以下，総 POI）数， 口コミ件数が 100 件以上の POI（以下，人気 POI）数，口 コミ評価 4.0 以上の POI（以下，高評価 POI）数を抽出す る．取得時点は 2025 年 6 月時点とする． ２.３ 滞在数の取得方法 滞在は，ジオテクノロジーズ社提供の人流データ（Geo- People）を用いて抽出する．データは 1 分間隔で位置情報 が得られ，移動がない場合は取得停止される特性をもつ． そこで，ユーザーID ごとに 50 m 以内で連続する最小 3 点以上かつ「ポイント数×2 分」以内の系列を滞在と判定 する．さらに，近接 した 複数の滞在 に対処するため， DBSCAN によるクラスタリングを適用し，同一クラスタ 内の重心を 1 滞在として生成する（羽田野ほか，2012）． 居住地などの秘匿処理されている情報は，秘匿フラグに 従い除外する．生成した滞在点は近接する歩道リンクへ 割り当て，リンク単位の総滞在数として集計する ．対象 期間は降雨がほとんど観測されなかった 2022 年 11 月 7 日（月）～2022 年 11 月 13 日（日）の 7 日間とする． ２.４ 分析方法 本研究では，滞在数に影響を与える空間的要因を検証 するため，一般化線形モデル（GLM）と，歩道構造・沿 道施設の特性に基づくスコア分析の 2 つの手法を用いる． 主分析の GLM では，目的変数がカウントデータで過 分散の特性を持つため，負の二項分布を仮定して構築す る．歩道リンク単位の 7 日間の滞在数を目的変数とし， 歩道長の影響をオフセット項（ 対数変換）で補正した上 で，駅からの距離，総 POI 数，人気 POI 数，高評価 POI 数，歩道構造 （歩行者専用道路，歩車分離，歩車一体，路 側帯）を説明変数に投入し，駅からの距離との交互作用 項を導入して駅近傍と遠方での効果差を検証する． スコア分析では，滞在を促進しうる物的条件を把握す るため，歩道構造と沿道施設の特性を簡易にスコア化し， 駅からの距離帯 （100 m 単位） ごとの歩道長さあたりの平 均滞在数と比較する．スコアは，歩道構造が歩行者専用 道路または歩車分離である場合に 1 点とし，さらに，沿 道 POI 密度（歩道 1 m あたり総 POI 数），人気 POI 割合 （歩道 1m あたり人気 POI 数を総 POI 数で除したもの）， 高評価 POI 割合（歩道 1 m あたり高評価 POI 数を総 POI 数で除したもの）の 3 項目について，同一距離帯内で相 対的に良好な環境と判断できる上位 25%に該当する場合 に，それぞれ 1 点を加算する．スコアは 0〜4 点で構成さ れ，空間的に条件の整った歩道リンクにおいて滞在が 増 加するかを視覚的に捉える補助分析として位置付ける． ３．対象地域の概況 ３.１ 大井町 大井町駅は品川区に位置 し，東日本旅客鉄道（以下， JR）・東急電鉄・東京臨海高速鉄道の 3 路線が乗り入れる． 2023 年度の平均乗降客数は 230,982 人／日（JR は降車を 含まない）である．歩道の総延長は 31,743 m であり，そ のうち歩車分離が 39%，路側帯が 19%，歩車一体が 16%， 歩行者専用道路が 14%を占める．幹線道路沿いでは歩車 分離が，裏道では歩車一体や路側帯が目立つ（図１）． 駅北西側には車両基地があり，駅内や駅前には大規模 集客施設が分布する．対象地域の POI 数は 914 件で，口 コミ数上位 3 位は全て大規模集客施設で，いずれも駅前 に立地する．さらに，駅前には飲食店が集積し，駅から 離れると住宅街が広がり，複数の商店街が駅と周辺地域 を結ぶ構造となっている．高評価 POI も駅から離れた地 域に多く分布する．滞在数は対象期間に 11,678 件抽出さ れ，駅周辺に集中している．また，北西部や南部側でも 滞在数がやや多い箇所がみられる． ３.２ 吉祥寺 吉祥寺駅は武蔵野市に位置し，JR と京王電鉄が乗り入 れる．2023 年度の平均乗降客数は 251,190 人／日（JR は 降車を含まない）である．歩道の総延長は 30,978 m で， そのうち歩車分離が 30%，歩車一体が 25%，路側帯が 20%， 歩行者専用道路が 18%を占める．格子状の歩行空間が形 成され，駅北側から南側の井の頭恩賜公園にかけて歩行 E4-01 第34回地理情報システム学会学術研究発表大会 - E4-01 -"
+      },
+      {
+        "page": 3,
+        "text": "3／4 者専用道路が整備されている 点が特徴的である（図１）． 対象地域の POI 数は 2,378 件あり，人気 POI は駅中や 駅前に限らず，駅から離れた地域にも多い．高評価 POI も駅から離れた地域に多くみられる．駅から離れると住 宅街が広がり，駅と周辺地域や口コミ数の多い施設の間 を結 ぶ複数の商店街が存在する ．滞在数は対象期間に 25,982 件抽出され，駅周辺に特に集中している．また， 駅と井の頭恩賜公園や大規模集客施設を結ぶ歩行空間周 辺においても，滞在数が多くみられる． ４．結果 ４.１ 一般化線形モデルによる影響要因分析 表２に一般化線形モデルによる分析 結果を示す．両駅 に共通して，駅からの距離は滞在数に対して有意かつ強 図１ 歩道構造と滞在数（上図：大井町，下図：吉祥寺） い負の影響を与えていた．一方で，駅からの距離との交 互作用の分析から，駅遠方でも滞在が促される空間特性 が存在することが示唆された．特に，高評価 POI 割合は 主効果で有意に負の係数を示したが，交互作用項では両 駅で有意に正となり，駅遠方においても高評価 POI が集 積するエリアでは滞在数が増加する傾向が確認された ． また，歩行者専用道路との交互作用も両駅で有意に正で あり，駅遠方における歩行者空間の明確性が滞在を支え る可能性がある．一方，吉祥寺では総 POI 密度が主効果 として有意な負の係数を示しており，単なる POI の量で はなく，質的な要素や文脈が滞在に影響することが示唆 された．これらの結果から，駅からの距離による減衰効 果は一貫して存在するが ，その影響は 歩道 構造や 沿道 POI の質により緩和され得ることが明らかとなった． ４.２ スコア分析による滞在傾向 図２にスコア分析の結果を示す．両駅ともに，駅から の距離が増すごとに滞在数が減少する傾向がみられたが ， その減衰の度合いには違いが見られた ．吉祥寺では大井 町よりも緩やかな減少傾向を示し ，より広範な範囲で人 が滞在している様子がうかがえる． スコア別では，両駅に共通してスコア 1 の歩道で最も 高い滞在数が観測され，0〜99 m においては大井町で 4.52 人，吉祥寺で 3.39 人と高水準を示した．吉祥寺ではスコ ア 0 の歩道でも同様に高い滞在数が確認されており，ス コアにかかわらず一定の滞在が生じていることがわか る．100〜199 m では，吉祥寺においてスコア 2 やスコア 3 の歩道も高水準で，大井町ではスコア 1 が最も高くな った．200〜299 m では，両駅ともに滞在数が減少するが， 吉祥寺ではスコア 3 や 4 の歩道にも滞在が見られた． 400 m 以遠の距離帯では全体的に滞在数が少ないもの の，スコアごとの差異がみられる．吉祥寺ではスコア 1 の 歩道で 0.14〜0.23 人程度の滞在が確認されたほか，両駅 ともにスコア 1 の歩道の方がスコア 0 の歩道よりわずか 表２ 一般化線形モデルによる滞在数への影響分析結果 説明変数 大井町 吉祥寺 定数 5.38 ** (0.53) 6.37 ** (0.50) 駅からの距離（m） -15.68 ** (1.29) -15.36 ** (1.18) 総 POI 密度 0.05 ** (0.02) -0.02 ** (0.01) 人気POI 割合 -2.02 * (0.91) -0.24 (0.81) 高評価POI 割合 -10.93 ** (0.67) -10.50 ** (0.69) 歩行者専用道路 0.18 (0.30) 0.34 (0.28) 歩車分離 0.59 * (0.25) 0.13 (0.21) 路側帯 0.05 (0.33) -1.09 ** (0.30) 歩車一体 0.52 (0.47) -0.32 (0.34) 駅からの距離×総POI 密度 -0.34 ** (0.10) 0.08 ** (0.02) 駅からの距離×人気POI 割合 1.25 (2.14) -1.82 (1.82) 駅からの距離×高評価POI 割合 22.48 ** (1.66) 19.00 ** (1.64) 駅からの距離×歩行者専用道路 1.58 * (0.79) 2.05 ** (0.70) 駅からの距離×歩車分離 -0.43 (0.64) 1.62 ** (0.57) 駅からの距離×路側帯 -1.52 (0.83) 2.89 ** (0.72) 駅からの距離×歩車一体 -1.80 (1.07) 0.95 (0.81) ※擬似決定係数は大井町が 0.743，吉祥寺が 0.643 と精度はやや良好で， 表左側の数値は係数，**は 1%，*は 5%有意，括弧書きは標準誤差を示す E4-01 第34回地理情報システム学会学術研究発表大会 - E4-01 -"
+      },
+      {
+        "page": 4,
+        "text": "4／4 図２ 各駅のスコア（上図：大井町，下図：吉祥寺） に滞在傾向が強い様子がうかがえた ．一定の整備や沿道 環境が滞在に寄与している可能性が示唆される． ５．考察と結論 本研究は，大井町駅および吉祥寺駅周辺部を対象とし て，歩道の構造種別および沿道の施設特性が歩行者の滞 在に与える影響を，駅からの距離を考慮しつつ検証する ことを目的として，歩道リンク単位で分析を行った． 分析の結果，駅からの距離は両地域に共通して滞在数 を大きく減少させる主要因であることが，GLM およびス コア分析の双方で確認された．一方，高評価 POI 割合は 主効果で負の係数を示したが， 交互作用項では正に働き， 駅遠方では高評価 POI の存在が滞在を支える要因となる ことが明らかとなった．こ れは，全体の平均では，高評 価 POI 割合が滞在の多い駅前で低く表れるため主効果は 負となるが，駅遠では少数の高評価 POI がむしろ滞在を 支える要因になるためと考えられる．また，歩行者専用 道路も有意に正の効果を示したほか，400 m 以遠におい てもスコアの高い歩道はスコア 0 の歩道よりも滞在数が 多く，歩道構造や沿道環境の重要性が示唆された． これらの結果は，従来の駅中心の集約的な空間形成の みならず，駅から距離がある地域においても ，歩道の構 造的な明瞭さや，質の高い沿道施設が備わっている場合 には，滞在が創出されうることを示している ．特に吉祥 寺においては，整備された歩行者空間やにぎわい施設が 駅周辺から公園や商店街へと面的に展開している構造が ， 滞在の空間的広がりを支えていると考えられる． 以上より，都市部におけるウォーカブルな環境の実現 には，駅前空間に加え，駅から離れた歩道においても ， 歩行者の安心・快適を担保する構造的整備と ，質の高い 施設誘導の両立が求められる ．また，本研究では，歩道 リンク単位で滞在数と空間要素を集計 ・ 分析することで， 従来のメッシュや地点単位では捉えにくい実際の歩行経 路に即した空間評価が可能となった ．歩道の構造や沿道 環境は連続的かつ経路上に展開されることから ，リンク 単位での集計はこれらの特性を忠実に反映できる枠組み であり，滞在を誘発する局所的な条件を把握し ，整備対 象をより具体的に特定するうえで有効である． 一方で，本研究には限界もある．対象地域が限られて いること，駅の出入り口を考慮できていないこと，駅か ら 500 m 以遠の範囲を分析できていないこと，また駅遠 方における明確な目的地の有無や性質が考慮されていな い点は，今後の検討課題として残る． 謝辞 本研究は，東京都「地域を主体とするスマート東京先 進事例創出事業」支援プロジェクト「デジタルエリアデ ザインの共創 in 大井町」の支援を受けて実施したもので ある．また，慶應義塾大学総合政策学部 の春日裕信氏に データ収集を協力いただいた．ここに感謝の意を表する． 参考文献 有馬隆文・大木健人・出口敦・坂井猛（2008）商業地街路に おける行動誘発要素と歩行者のアクティビティに関する 基礎的研究 ―五感を刺激する商業地デザインと来訪者の アクティビティ (その 1)―，「日本建築学会計画系論文集」 ， 73（623），177-182． 伊藤佑亮・高山宇宙・森本章倫（2021）Walkability の概念整 理と日本での適用に向けた課題に関する研究―歩行行動 の欲求段階モデルを用いた高田馬場駅周辺街路における ケーススタディ―， 「日本都市計画学会都市計画論文集」 ， 65（3），811-818． 国土交通省：ウォーカブルポータルサイト, https://www.mlit. go.jp/toshi/walkable/ <2025.8.23 参照>． 国土交通省（2024）歩行空間ネットワークデータ整備仕様． 澤田春奈・松浦健治郎 （2025） 滞留空間としての歩道の使わ れ方と滞留を誘発する要素に関する研究―千葉市西千葉 学園通りを対象として―， 「日本建築学会計画系論文集」 ， 90（828），259-265． 天谷太一・岡田潤・中村文彦・出口敦（2024）東京都区部の 大規模開発集積における従業者 ・ 来街者の回遊行動の傾向 の変化に関する研究，「日本都市計画学会都市計画論文集」 ， 59（3），659-666． 羽田野真由美・上山智士・秋山祐樹・HORANONT Teerayu・ 柴崎亮介（2012）GPS データを用いた商業集積地来訪者の 行動パターン抽出方法の検討， 「地理情報システム学会講 演論文集」 ，21． 0 1 2 3 4 0~99m 100~199m 200~299m 300~399m 400~499m 500~599m 600m~ 歩 道 長 さ あ た り 平 均 滞 在 数 駅からの経路距離 0 1 2 3 4 0 1 2 3 4 0~99m 100~199m 200~299m 300~399m 400~499m 500~599m 600m~ 歩 道 長 さ あ た り 平 均 滞 在 数 駅からの経路距離 0 1 2 3 4 E4-01 第34回地理情報システム学会学術研究発表大会 - E4-01 -"
+      }
+    ],
+    "candidate_headings": []
+  }
+}
